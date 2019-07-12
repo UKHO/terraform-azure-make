@@ -1,3 +1,3 @@
 FROM zenika/terraform-azure-cli:3.0-debian
 
-RUN apt-get install -y make
+RUN apt-get install -y build-essential
