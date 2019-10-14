@@ -16,4 +16,6 @@ RUN echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ $(lsb
     tee /etc/apt/sources.list.d/azure-cli.list
 RUN apt-get update
 RUN apt-get install azure-cli
+RUN apt-get update
+RUN apt-get install git-core
 COPY --from=terraform /terraform /usr/local/bin/terraform
