@@ -2,8 +2,8 @@ FROM debian:stretch-20190708 as terraform
 
 RUN apt-get update
 RUN apt-get install -y curl unzip
-RUN curl -O https://releases.hashicorp.com/terraform/0.12.9/terraform_0.12.9_linux_amd64.zip
-RUN unzip -j terraform_0.12.9_linux_amd64.zip
+RUN curl -O https://releases.hashicorp.com/terraform/0.12.18/terraform_0.12.18_linux_amd64.zip
+RUN unzip -j terraform_0.12.18_linux_amd64.zip
 
 FROM debian:stretch-20190708-slim
 
